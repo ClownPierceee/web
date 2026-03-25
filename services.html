@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- Білоус Владислав - Сторінка послуг -->
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Послуги — Владислав Білоус Interior Studio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== ХЕДЕР (спільний для всіх сторінок) ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">
+          <span class="logo__name">Interior Studio</span>
+          <span class="logo__tagline">Дизайн інтер'єру</span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link active">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#portfolio" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger" id="burger" aria-label="Відкрити меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <!-- Заголовок (ЛР №1: h1) -->
+      <h1 class="page-hero__title">Наші послуги</h1>
+      <!-- Хлібні крихти (ЛР №1: гіперпосилання) -->
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Головна</a>
+        <span>›</span>
+        <span>Послуги</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===== СТОРІНКА ПОСЛУГ (ЛР №9-10: Grid) ===== -->
+  <main class="services-page">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">Що ми робимо</span>
+        <h2 class="section-title">Повний спектр дизайнерських послуг</h2>
+        <p class="section-subtitle">
+          Від розробки концепції до авторського нагляду —
+          ми супроводжуємо вас на кожному етапі.
+        </p>
+      </div>
+
+      <!-- Список послуг (ЛР №9-10: Grid layout) -->
+      <div class="services-page__grid">
+
+        <!-- Послуга 1: Дизайн житлових приміщень -->
+        <article class="service-full" id="residential">
+          <div class="service-full__image">
+            <img src="images/service-residential.jpg" alt="Дизайн житлових приміщень" />
+          </div>
+          <div class="service-full__content">
+            <span class="service-full__number">01</span>
+            <h2 class="service-full__title">Дизайн житлових приміщень</h2>
+            <p class="service-full__description">
+              Ми створюємо персоналізовані інтер'єри для квартир, будинків і котеджів,
+              що відображають характер і спосіб життя їхніх мешканців. Кожен проект
+              починається з детального вивчення потреб клієнта та особливостей простору.
+            </p>
+            <p class="service-full__description">
+              Наші дизайнери поєднують естетику та функціональність, створюючи
+              гармонійні простори, де кожен елемент продуманий до дрібниць.
+            </p>
+
+            <!-- Список особливостей (ЛР №2: ul > li) -->
+            <ul class="service-full__features">
+              <li class="service-full__feature">Розробка концепції та стилю</li>
+              <li class="service-full__feature">3D-візуалізація майбутнього інтер'єру</li>
+              <li class="service-full__feature">Підбір матеріалів, меблів та декору</li>
+              <li class="service-full__feature">Креслення для ремонтних робіт</li>
+              <li class="service-full__feature">Кошторис на реалізацію</li>
+            </ul>
+
+            <div class="service-full__price">
+              <span class="service-full__price-label">Від</span>
+              <span class="service-full__price-value">25 000 грн</span>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">Замовити консультацію</a>
+          </div>
+        </article>
+
+        <!-- Послуга 2: Дизайн комерційних приміщень -->
+        <article class="service-full" id="commercial">
+          <div class="service-full__image">
+            <img src="images/service-commercial.jpg" alt="Дизайн комерційних приміщень" />
+          </div>
+          <div class="service-full__content">
+            <span class="service-full__number">02</span>
+            <h2 class="service-full__title">Дизайн комерційних приміщень</h2>
+            <p class="service-full__description">
+              Правильно спроектований комерційний простір підвищує продуктивність
+              співробітників, залучає клієнтів та зміцнює імідж бренду. Ми розробляємо
+              дизайн офісів, ресторанів, магазинів та готелів.
+            </p>
+            <p class="service-full__description">
+              Враховуємо специфіку вашого бізнесу, цільову аудиторію та фірмовий стиль
+              компанії при розробці концепції.
+            </p>
+
+            <ul class="service-full__features">
+              <li class="service-full__feature">Аналіз бізнес-процесів та потреб</li>
+              <li class="service-full__feature">Зонування та планування простору</li>
+              <li class="service-full__feature">Брендинг у дизайні інтер'єру</li>
+              <li class="service-full__feature">Ергономіка робочих місць</li>
+              <li class="service-full__feature">Технічна документація</li>
+            </ul>
+
+            <div class="service-full__price">
+              <span class="service-full__price-label">Від</span>
+              <span class="service-full__price-value">40 000 грн</span>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">Замовити консультацію</a>
+          </div>
+        </article>
+
+        <!-- Послуга 3: Авторський нагляд -->
+        <article class="service-full" id="supervision">
+          <div class="service-full__image">
+            <img src="images/service-supervision.jpg" alt="Авторський нагляд" />
+          </div>
+          <div class="service-full__content">
+            <span class="service-full__number">03</span>
+            <h2 class="service-full__title">Авторський нагляд</h2>
+            <p class="service-full__description">
+              Маємо дизайн-проект, але хочете бути впевнені, що він буде реалізований
+              саме так, як задумано? Наша команда здійснює регулярні виїзди на об'єкт,
+              контролює якість матеріалів та відповідність виконаних робіт проекту.
+            </p>
+            <p class="service-full__description">
+              Ми будемо вашими очима та голосом на будівельному майданчику, вирішуючи
+              всі технічні питання і захищаючи ваші інтереси.
+            </p>
+
+            <ul class="service-full__features">
+              <li class="service-full__feature">Регулярні виїзди на об'єкт</li>
+              <li class="service-full__feature">Контроль якості матеріалів</li>
+              <li class="service-full__feature">Вирішення поточних технічних питань</li>
+              <li class="service-full__feature">Фотозвіти після кожного візиту</li>
+              <li class="service-full__feature">Координація з підрядниками</li>
+            </ul>
+
+            <div class="service-full__price">
+              <span class="service-full__price-label">Від</span>
+              <span class="service-full__price-value">8 000 грн/міс</span>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">Замовити консультацію</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Таблиця порівняння пакетів (ЛР №3-4: HTML таблиці) -->
+      <div style="margin-top: 80px;">
+        <div class="section-header">
+          <span class="section-tag">Пакети послуг</span>
+          <h2 class="section-title">Оберіть свій пакет</h2>
+        </div>
+
+        <!-- Таблиця (ЛР №3-4: <table>, <thead>, <tbody>, <tr>, <td>, <th>) -->
+        <div style="overflow-x: auto;">
+          <table style="
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            font-family: var(--font-body);
+          ">
+            <thead>
+              <tr>
+                <th style="padding: 20px 24px; text-align: left; background: #2C2C2C; color: white; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">
+                  Послуга
+                </th>
+                <th style="padding: 20px 24px; text-align: center; background: #2C2C2C; color: white; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">
+                  Базовий
+                </th>
+                <th style="padding: 20px 24px; text-align: center; background: #C4703F; color: white; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">
+                  Стандарт ★
+                </th>
+                <th style="padding: 20px 24px; text-align: center; background: #2C2C2C; color: white; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">
+                  Преміум
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #F0EBE5;">
+                <td style="padding: 16px 24px; color: #2C2C2C; font-weight: 600;">Консультація дизайнера</td>
+                <td style="padding: 16px 24px; text-align: center;">✓</td>
+                <td style="padding: 16px 24px; text-align: center; background: rgba(196,112,63,0.05);">✓</td>
+                <td style="padding: 16px 24px; text-align: center;">✓</td>
+              </tr>
+              <tr style="background: #F9F6F3; border-bottom: 1px solid #F0EBE5;">
+                <td style="padding: 16px 24px; color: #2C2C2C; font-weight: 600;">Планувальне рішення</td>
+                <td style="padding: 16px 24px; text-align: center;">✓</td>
+                <td style="padding: 16px 24px; text-align: center; background: rgba(196,112,63,0.05);">✓</td>
+                <td style="padding: 16px 24px; text-align: center;">✓</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #F0EBE5;">
+                <td style="padding: 16px 24px; color: #2C2C2C; font-weight: 600;">3D-візуалізація</td>
+                <td style="padding: 16px 24px; text-align: center; color: #888;">2 кімнати</td>
+                <td style="padding: 16px 24px; text-align: center; background: rgba(196,112,63,0.05);">Всі кімнати</td>
+                <td style="padding: 16px 24px; text-align: center;">Всі + VR-тур</td>
+              </tr>
+              <tr style="background: #F9F6F3; border-bottom: 1px solid #F0EBE5;">
+                <td style="padding: 16px 24px; color: #2C2C2C; font-weight: 600;">Підбір матеріалів</td>
+                <td style="padding: 16px 24px; text-align: center; color: #888;">—</td>
+                <td style="padding: 16px 24px; text-align: center; background: rgba(196,112,63,0.05);">✓</td>
+                <td style="padding: 16px 24px; text-align: center;">✓ + шопінг-тур</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #F0EBE5;">
+                <td style="padding: 16px 24px; color: #2C2C2C; font-weight: 600;">Авторський нагляд</td>
+                <td style="padding: 16px 24px; text-align: center; color: #888;">—</td>
+                <td style="padding: 16px 24px; text-align: center; background: rgba(196,112,63,0.05);">—</td>
+                <td style="padding: 16px 24px; text-align: center;">✓ (повний)</td>
+              </tr>
+              <tr style="background: #F9F6F3;">
+                <td style="padding: 20px 24px; color: #2C2C2C; font-weight: 700; font-size: 17px;">Вартість</td>
+                <td style="padding: 20px 24px; text-align: center; font-weight: 700; color: #C4703F; font-size: 17px;">від 25 000 грн</td>
+                <td style="padding: 20px 24px; text-align: center; font-weight: 700; color: white; font-size: 17px; background: rgba(196,112,63,0.1);">від 45 000 грн</td>
+                <td style="padding: 20px 24px; text-align: center; font-weight: 700; color: #C4703F; font-size: 17px;">від 80 000 грн</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html" class="logo">
+              <span class="logo__name">Interior Studio</span>
+              <span class="logo__tagline">Дизайн інтер'єру</span>
+            </a>
+          </div>
+          <p class="footer__description">
+            Ми створюємо красиві та функціональні простори.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">📷</a>
+            <a href="#" class="footer__social-link">📘</a>
+            <a href="#" class="footer__social-link">📌</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Навігація</h4>
+          <ul class="footer__nav-list">
+            <li><a href="index.html" class="footer__nav-link">Головна</a></li>
+            <li><a href="services.html" class="footer__nav-link">Послуги</a></li>
+            <li><a href="index.html#portfolio" class="footer__nav-link">Портфоліо</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Послуги</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#residential" class="footer__nav-link">Житлові інтер'єри</a></li>
+            <li><a href="#commercial" class="footer__nav-link">Комерційні проекти</a></li>
+            <li><a href="#supervision" class="footer__nav-link">Авторський нагляд</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Контакти</h4>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>вул. Хрещатик, 15, Київ</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <a href="tel:+380441234567" class="footer__nav-link">+38 (044) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Interior Studio | <strong>Білоус Владислав</strong>, К-31</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

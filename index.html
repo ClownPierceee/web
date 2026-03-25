@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<!-- Білоус Владислав - Курсова робота: Розробка вебсайту послуг з дизайну інтер'єру -->
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interior Studio — студія дизайну інтер'єру. Створюємо унікальні простори для вашого дому та бізнесу." />
+  <title>Владислав Білоус — Interior Studio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Стилі (ЛР №7-8: підключення CSS) -->
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== ХЕДЕР (ЛР №13-14: фіксований header, position: fixed) ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <!-- Логотип -->
+        <a href="index.html" class="logo">
+          <span class="logo__name">Interior Studio</span>
+          <span class="logo__tagline">Дизайн інтер'єру</span>
+        </a>
+
+        <!-- Навігація (ЛР №13-14: nav > ul > li > a) -->
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">Послуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Гамбургер-меню (ЛР №13-14: адаптивна навігація на мобільних) -->
+        <button class="burger" id="burger" aria-label="Відкрити меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO СЕКЦІЯ (ЛР №7-8: background-image, position) ===== -->
+  <section class="hero" id="home">
+    <!-- Фонове зображення (ЛР №7-8: background) -->
+    <div class="hero__bg"></div>
+
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__tag">✦ Дизайн інтер'єру</span>
+
+        <!-- Заголовки (ЛР №1: h1–h6) -->
+        <h1 class="hero__title">
+          Створюємо простори,
+          <span>де живе краса</span>
+        </h1>
+
+        <!-- Абзац (ЛР №1: <p>) -->
+        <p class="hero__description">
+          Ми перетворюємо звичайні приміщення на унікальні простори,
+          що відображають вашу індивідуальність і відповідають найвищим
+          стандартам комфорту.
+        </p>
+
+        <!-- Кнопки (ЛР №1: <a>, гіперпосилання) -->
+        <div class="hero__buttons">
+          <a href="#portfolio" class="btn btn-primary">Переглянути портфоліо</a>
+          <a href="contact.html" class="btn btn-outline">Замовити консультацію</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Індикатор прокрутки -->
+    <div class="hero__scroll">
+      <div class="hero__scroll-arrow"></div>
+      <span>Гортай вниз</span>
+    </div>
+  </section>
+
+  <!-- ===== СЕКЦІЯ "ПРО НАС" (ЛР №7-8: CSS, позиціонування) ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Зображення (ЛР №1: <img>, ЛР №13-14: абсолютне позиціонування) -->
+        <div class="about__images">
+          <img
+            src="images/about-main.jpg"
+            alt="Дизайн вітальні в сучасному стилі"
+            class="about__img-main"
+          />
+          <img
+            src="images/about-secondary.jpg"
+            alt="Деталі інтер'єру"
+            class="about__img-secondary"
+          />
+          <div class="about__experience">
+            <span class="about__experience-number">8+</span>
+            <span class="about__experience-text">Років досвіду</span>
+          </div>
+        </div>
+
+        <!-- Контент -->
+        <div class="about__content">
+          <div class="section-header" style="text-align:left; margin-bottom:28px;">
+            <span class="section-tag">Про нас</span>
+            <h2 class="section-title">Ми перетворюємо мрії на реальність</h2>
+          </div>
+
+          <p class="about__text">
+            Interior Studio — це команда досвідчених дизайнерів та архітекторів,
+            що з пристрастю підходить до кожного проекту. Ми поєднуємо
+            класичні традиції з сучасними тенденціями, створюючи інтер'єри,
+            які є водночас красивими та функціональними.
+          </p>
+          <p class="about__text">
+            Кожен проект для нас — це унікальна можливість втілити бачення
+            клієнта у життя. Ми ретельно вивчаємо потреби та побажання
+            замовників, щоб створити простір, який стане відображенням
+            їхньої особистості.
+          </p>
+
+          <!-- Статистика (ЛР №9-10: Flexbox / CSS Grid) -->
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number">240+</span>
+              <span class="about__stat-label">Проектів</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">98%</span>
+              <span class="about__stat-label">Задоволених клієнтів</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number">12</span>
+              <span class="about__stat-label">Нагород</span>
+            </div>
+          </div>
+
+          <a href="services.html" class="btn btn-dark">Наші послуги →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПОСЛУГИ (превью, ЛР №9-10: Flexbox/Grid layout) ===== -->
+  <section class="services-preview" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Що ми пропонуємо</span>
+        <h2 class="section-title">Наші послуги</h2>
+        <p class="section-subtitle">
+          Ми надаємо повний спектр дизайнерських послуг — від першого ескізу
+          до авторського нагляду за реалізацією.
+        </p>
+      </div>
+
+      <!-- Картки послуг (ЛР №9-10: CSS Grid) -->
+      <div class="services-preview__grid">
+        <article class="service-card">
+          <div class="service-card__icon">🏡</div>
+          <h3 class="service-card__title">Дизайн житлових приміщень</h3>
+          <p class="service-card__description">
+            Квартири, будинки, котеджі — ми створюємо затишні та функціональні
+            простори для комфортного проживання.
+          </p>
+          <a href="services.html#residential" class="service-card__link">
+            Дізнатись більше →
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">🏢</div>
+          <h3 class="service-card__title">Дизайн комерційних приміщень</h3>
+          <p class="service-card__description">
+            Офіси, ресторани, магазини — розробляємо концепції, що підсилюють
+            бренд та підвищують ефективність бізнесу.
+          </p>
+          <a href="services.html#commercial" class="service-card__link">
+            Дізнатись більше →
+          </a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">👁️</div>
+          <h3 class="service-card__title">Авторський нагляд</h3>
+          <p class="service-card__description">
+            Супроводжуємо весь процес реалізації проекту, контролюємо якість
+            робіт та відповідність дизайн-концепції.
+          </p>
+          <a href="services.html#supervision" class="service-card__link">
+            Дізнатись більше →
+          </a>
+        </article>
+      </div>
+
+      <div class="services-preview__cta">
+        <a href="services.html" class="btn btn-primary">Переглянути всі послуги</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПОРТФОЛІО (ЛР №7-8: CSS Grid, background) ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: rgba(196,112,63,0.9);">Наші роботи</span>
+        <h2 class="section-title">Портфоліо</h2>
+      </div>
+
+      <!-- Фільтр -->
+      <div class="portfolio__filter">
+        <button class="portfolio__filter-btn active" data-filter="all">Всі</button>
+        <button class="portfolio__filter-btn" data-filter="residential">Житлові</button>
+        <button class="portfolio__filter-btn" data-filter="commercial">Комерційні</button>
+        <button class="portfolio__filter-btn" data-filter="modern">Сучасний стиль</button>
+      </div>
+
+      <!-- Сітка портфоліо (CSS Grid) -->
+      <div class="portfolio__grid">
+        <div class="portfolio__item" data-category="residential modern">
+          <img src="images/portfolio-1.jpg" alt="Мінімалістична вітальня" class="portfolio__item-img" />
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Мінімалістична вітальня</h3>
+            <span class="portfolio__item-category">Житловий • Сучасний</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="commercial">
+          <img src="images/portfolio-2.jpg" alt="Офіс IT-компанії" class="portfolio__item-img" />
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Офіс IT-компанії</h3>
+            <span class="portfolio__item-category">Комерційний</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="residential">
+          <img src="images/portfolio-3.jpg" alt="Скандинавська спальня" class="portfolio__item-img" />
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Скандинавська спальня</h3>
+            <span class="portfolio__item-category">Житловий</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="commercial modern">
+          <img src="images/portfolio-4.jpg" alt="Ресторан Botanica" class="portfolio__item-img" />
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Ресторан Botanica</h3>
+            <span class="portfolio__item-category">Комерційний • Сучасний</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="residential modern">
+          <img src="images/portfolio-5.jpg" alt="Кухня-студія" class="portfolio__item-img" />
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Кухня-студія</h3>
+            <span class="portfolio__item-category">Житловий • Сучасний</span>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="residential">
+          <img src="images/portfolio-6.jpg" alt="Дитяча кімната" class="portfolio__item-img" />
+          <div class="portfolio__item-overlay">
+            <h3 class="portfolio__item-title">Дитяча кімната</h3>
+            <span class="portfolio__item-category">Житловий</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ВІДГУКИ ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Відгуки клієнтів</span>
+        <h2 class="section-title">Що кажуть наші клієнти</h2>
+      </div>
+
+      <!-- Картки відгуків (ЛР №9-10: Grid) -->
+      <div class="testimonials__grid">
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">
+            "Команда Interior Studio перевершила всі наші очікування. Вони
+            зрозуміли нашу концепцію з першого разу і реалізували проект
+            у найкоротші терміни. Тепер наш офіс — справжнє задоволення!"
+          </p>
+          <div class="testimonial-card__author">
+            <img src="images/avatar-1.jpg" alt="Олена Коваль" class="testimonial-card__avatar" />
+            <div>
+              <p class="testimonial-card__name">Олена Коваль</p>
+              <p class="testimonial-card__role">CEO, TechStart</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">
+            "Нарешті ми живемо у квартирі нашої мрії! Дизайнери врахували
+            кожну дрібницю — від освітлення до розміщення меблів. Авторський
+            нагляд зробив процес ремонту абсолютно безстресовим."
+          </p>
+          <div class="testimonial-card__author">
+            <img src="images/avatar-2.jpg" alt="Микола Петренко" class="testimonial-card__avatar" />
+            <div>
+              <p class="testimonial-card__name">Микола Петренко</p>
+              <p class="testimonial-card__role">Приватний клієнт</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">
+            "Довірили студії дизайн нашого ресторану — і не помилилися.
+            Відвідувачі постійно запитують, хто робив інтер'єр. Завдяки
+            красивому простору кількість постійних гостей зросла вдвічі."
+          </p>
+          <div class="testimonial-card__author">
+            <img src="images/avatar-3.jpg" alt="Ірина Мороз" class="testimonial-card__avatar" />
+            <div>
+              <p class="testimonial-card__name">Ірина Мороз</p>
+              <p class="testimonial-card__role">Власниця ресторану</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== КОНТАКТИ (превью на головній, ЛР №6, ЛР №11-12) ===== -->
+  <section class="home-contact" id="contact">
+    <div class="container">
+      <div class="home-contact__grid">
+
+        <!-- Контактна інформація -->
+        <div class="home-contact__info">
+          <div class="section-header" style="text-align:left; margin-bottom:28px;">
+            <span class="section-tag">Зв'яжіться з нами</span>
+            <h2 class="section-title">Готові обговорити ваш проект?</h2>
+          </div>
+          <p class="home-contact__text">
+            Залишіть заявку або зв'яжіться з нами будь-яким зручним способом.
+            Перша консультація — безкоштовно!
+          </p>
+
+          <!-- Список контактів (ЛР №2: ul > li) -->
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-text">
+                <strong>Адреса</strong>
+                <span>вул. Хрещатик, 15, Київ, 01001</span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div class="contact-info-text">
+                <strong>Телефон</strong>
+                <!-- Гіперпосилання (ЛР №1: <a href="tel:...">) -->
+                <span><a href="tel:+380441234567" style="color: var(--color-gray);">+38 (044) 123-45-67</a></span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div class="contact-info-text">
+                <strong>Email</strong>
+                <span><a href="mailto:hello@interior-studio.ua" style="color: var(--color-gray);">hello@interior-studio.ua</a></span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div class="contact-info-text">
+                <strong>Графік роботи</strong>
+                <span>Пн–Пт: 9:00–18:00 | Сб: 10:00–15:00</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Форма зворотного зв'язку (ЛР №6: HTML форми, ЛР №11-12: стилізація) -->
+        <div class="form" id="contact-form-wrapper">
+          <h3 class="form__title">Швидка консультація</h3>
+
+          <form id="contactForm" novalidate>
+            <!-- Рядок 1: Ім'я + Телефон (ЛР №11-12: form-row flex layout) -->
+            <div class="form__row">
+              <div class="form__col">
+                <div class="form__group">
+                  <!-- label + input (ЛР №6: label for="id") -->
+                  <label class="form__label" for="firstName">
+                    Ваше ім'я <span class="required">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="form__input"
+                    placeholder="Введіть ваше ім'я"
+                    required
+                  />
+                  <span class="form__error" id="firstNameError">Вкажіть ваше ім'я</span>
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="phone">Телефон</label>
+                  <!-- Числовий тип для телефону (ЛР №6: type="tel") -->
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form__input"
+                    placeholder="+38 (___) ___-__-__"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Email (ЛР №6: type="email") -->
+            <div class="form__group">
+              <label class="form__label" for="email">
+                Email <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="your@email.com"
+                required
+              />
+              <span class="form__error" id="emailError">Вкажіть коректний email</span>
+            </div>
+
+            <!-- Тема (select — ЛР №6: випадаючий список) -->
+            <div class="form__group">
+              <label class="form__label" for="subject">Тема звернення</label>
+              <select id="subject" name="subject" class="form__select">
+                <option value="" selected>Оберіть тему</option>
+                <option value="residential">Дизайн житлового приміщення</option>
+                <option value="commercial">Дизайн комерційного приміщення</option>
+                <option value="supervision">Авторський нагляд</option>
+                <option value="consultation">Загальна консультація</option>
+                <option value="other">Інше</option>
+              </select>
+            </div>
+
+            <!-- Повідомлення (textarea — ЛР №6: текстова область) -->
+            <div class="form__group">
+              <label class="form__label" for="message">
+                Повідомлення <span class="required">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="form__textarea"
+                placeholder="Опишіть ваш проект або запитайте щось..."
+                required
+              ></textarea>
+              <span class="form__error" id="messageError">Напишіть повідомлення</span>
+            </div>
+
+            <!-- Checkbox (ЛР №6: type="checkbox") -->
+            <div class="form__checkbox-group">
+              <input
+                type="checkbox"
+                id="privacy"
+                name="privacy"
+                class="form__checkbox"
+                required
+              />
+              <label class="form__checkbox-label" for="privacy">
+                Я погоджуюся з <a href="#">Політикою конфіденційності</a>
+                та даю згоду на обробку персональних даних
+              </label>
+            </div>
+
+            <!-- Кнопка відправки (ЛР №6: type="submit") -->
+            <button type="submit" class="form__submit">
+              Надіслати заявку
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Про студію -->
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html" class="logo">
+              <span class="logo__name">Interior Studio</span>
+              <span class="logo__tagline">Дизайн інтер'єру</span>
+            </a>
+          </div>
+          <p class="footer__description">
+            Ми створюємо красиві та функціональні простори, що відображають
+            унікальність кожного клієнта.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest">📌</a>
+          </div>
+        </div>
+
+        <!-- Навігація (ЛР №2: ul > li) -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Навігація</h4>
+          <ul class="footer__nav-list">
+            <li><a href="index.html" class="footer__nav-link">Головна</a></li>
+            <li><a href="services.html" class="footer__nav-link">Послуги</a></li>
+            <li><a href="#portfolio" class="footer__nav-link">Портфоліо</a></li>
+            <li><a href="#about" class="footer__nav-link">Про нас</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Контакти</a></li>
+          </ul>
+        </div>
+
+        <!-- Послуги -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Послуги</h4>
+          <ul class="footer__nav-list">
+            <li><a href="services.html#residential" class="footer__nav-link">Житлові інтер'єри</a></li>
+            <li><a href="services.html#commercial" class="footer__nav-link">Комерційні проекти</a></li>
+            <li><a href="services.html#supervision" class="footer__nav-link">Авторський нагляд</a></li>
+          </ul>
+        </div>
+
+        <!-- Контакти -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Контакти</h4>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>вул. Хрещатик, 15, Київ</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <a href="tel:+380441234567" class="footer__nav-link">+38 (044) 123-45-67</a>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <a href="mailto:hello@interior-studio.ua" class="footer__nav-link">hello@interior-studio.ua</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Interior Studio. Усі права захищено. |
+          <strong>Білоус Владислав</strong>, Група К-31
+        </p>
+        <p style="font-size: 13px;">Курсова робота з WEB-технологій</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== МОДАЛЬНЕ ВІКНО (ЛР №13-14: JavaScript, DOM) ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal__icon">✅</div>
+      <h2 class="modal__title">Заявку надіслано!</h2>
+      <p class="modal__text">
+        Дякуємо за ваше звернення! Наш менеджер зв'яжеться з вами
+        протягом 2 годин у робочий час.
+      </p>
+      <button class="modal__close" id="modalClose">Чудово, дякую!</button>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript (ЛР №13-14: обробка подій, DOM) ===== -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

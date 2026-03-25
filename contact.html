@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!-- Білоус Владислав - Сторінка контактів та форми -->
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти — Владислав Білоус Interior Studio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ХЕДЕР -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">
+          <span class="logo__name">Interior Studio</span>
+          <span class="logo__tagline">Дизайн інтер'єру</span>
+        </a>
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Головна</a></li>
+            <li class="nav__item"><a href="services.html" class="nav__link">Послуги</a></li>
+            <li class="nav__item"><a href="index.html#portfolio" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">Про нас</a></li>
+            <li class="nav__item"><a href="contact.html" class="nav__link active">Контакти</a></li>
+          </ul>
+        </nav>
+        <button class="burger" id="burger" aria-label="Відкрити меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero__title">Контакти</h1>
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Головна</a>
+        <span>›</span>
+        <span>Контакти</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ОСНОВНИЙ КОНТЕНТ: КОНТАКТИ + ПОВНА ФОРМА (ЛР №6, №11-12) -->
+  <main class="contact-page">
+    <div class="container">
+
+      <div class="contact-page__grid">
+
+        <!-- Контактна інформація -->
+        <div class="contact-page__info">
+
+          <div class="contact-page__info-card">
+            <div class="contact-page__info-icon">📍</div>
+            <div>
+              <h3 class="contact-page__info-title">Адреса офісу</h3>
+              <!-- Зображення + посилання (ЛР №1: img as hyperlink) -->
+              <p class="contact-page__info-text">
+                вул. Хрещатик, 15, офіс 301<br />
+                м. Київ, 01001, Україна
+              </p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener"
+                 style="display: inline-block; margin-top: 10px; color: var(--color-accent); font-size: 14px; font-weight: 600;">
+                Відкрити на Google Maps →
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-page__info-card">
+            <div class="contact-page__info-icon">📞</div>
+            <div>
+              <h3 class="contact-page__info-title">Телефон</h3>
+              <p class="contact-page__info-text">
+                <a href="tel:+380441234567" style="color: var(--color-gray);">+38 (044) 123-45-67</a><br />
+                <a href="tel:+380671234567" style="color: var(--color-gray);">+38 (067) 123-45-67</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-page__info-card">
+            <div class="contact-page__info-icon">✉️</div>
+            <div>
+              <h3 class="contact-page__info-title">Email</h3>
+              <p class="contact-page__info-text">
+                <a href="mailto:hello@interior-studio.ua" style="color: var(--color-gray);">hello@interior-studio.ua</a><br />
+                <a href="mailto:projects@interior-studio.ua" style="color: var(--color-gray);">projects@interior-studio.ua</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-page__info-card">
+            <div class="contact-page__info-icon">🕐</div>
+            <div>
+              <h3 class="contact-page__info-title">Графік роботи</h3>
+              <!-- Список (ЛР №2: dl, dt, dd) -->
+              <dl style="font-size: 14px; color: var(--color-gray); line-height: 2;">
+                <dt style="font-weight: 700; color: var(--color-dark);">Понеділок — П'ятниця:</dt>
+                <dd>9:00 — 18:00</dd>
+                <dt style="font-weight: 700; color: var(--color-dark);">Субота:</dt>
+                <dd>10:00 — 15:00</dd>
+                <dt style="font-weight: 700; color: var(--color-dark);">Неділя:</dt>
+                <dd>Вихідний</dd>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Повна форма замовлення (ЛР №6, ЛР №11-12) -->
+        <div class="form">
+          <h2 class="form__title">Замовити консультацію</h2>
+          <p style="font-size: 14px; color: var(--color-gray); margin-bottom: 28px; line-height: 1.7;">
+            Заповніть форму і ми зв'яжемося з вами протягом 2 годин
+            у робочий час. Перша консультація — <strong>безкоштовно!</strong>
+          </p>
+
+          <!-- Форма (ЛР №6: <form>, action, method POST) -->
+          <form id="contactFormFull" action="#" method="POST" novalidate>
+
+            <!-- Рядок 1: Ім'я + Прізвище (ЛР №11-12: form-row flex) -->
+            <div class="form__row">
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="cf_firstName">
+                    Ім'я <span class="required">*</span>
+                  </label>
+                  <!-- Текстове поле (ЛР №6: type="text") -->
+                  <input
+                    type="text"
+                    id="cf_firstName"
+                    name="firstName"
+                    class="form__input"
+                    placeholder="Ваше ім'я"
+                    required
+                    minlength="2"
+                  />
+                  <span class="form__error" id="cf_firstNameError">Вкажіть ваше ім'я (мінімум 2 символи)</span>
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="cf_lastName">Прізвище</label>
+                  <input
+                    type="text"
+                    id="cf_lastName"
+                    name="lastName"
+                    class="form__input"
+                    placeholder="Ваше прізвище"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Рядок 2: Email + Телефон -->
+            <div class="form__row">
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="cf_email">
+                    Email <span class="required">*</span>
+                  </label>
+                  <!-- Email поле (ЛР №6: type="email") -->
+                  <input
+                    type="email"
+                    id="cf_email"
+                    name="email"
+                    class="form__input"
+                    placeholder="your@email.com"
+                    required
+                  />
+                  <span class="form__error" id="cf_emailError">Вкажіть коректну email адресу</span>
+                </div>
+              </div>
+              <div class="form__col">
+                <div class="form__group">
+                  <label class="form__label" for="cf_phone">
+                    Телефон <span class="required">*</span>
+                  </label>
+                  <!-- Телефонне поле (ЛР №6: type="tel") -->
+                  <input
+                    type="tel"
+                    id="cf_phone"
+                    name="phone"
+                    class="form__input"
+                    placeholder="+38 (0__) ___-__-__"
+                    required
+                  />
+                  <span class="form__error" id="cf_phoneError">Вкажіть номер телефону</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Тип послуги (ЛР №6: <select> — випадаючий список) -->
+            <div class="form__group">
+              <label class="form__label" for="cf_service">
+                Тип послуги <span class="required">*</span>
+              </label>
+              <select id="cf_service" name="service" class="form__select" required>
+                <option value="" selected>Оберіть тип послуги</option>
+                <option value="residential">Дизайн квартири</option>
+                <option value="house">Дизайн будинку / котеджу</option>
+                <option value="office">Дизайн офісу</option>
+                <option value="restaurant">Дизайн ресторану / кафе</option>
+                <option value="shop">Дизайн магазину</option>
+                <option value="supervision">Авторський нагляд</option>
+                <option value="consultation">Консультація</option>
+              </select>
+              <span class="form__error" id="cf_serviceError">Оберіть тип послуги</span>
+            </div>
+
+            <!-- Бюджет (ЛР №6: <select>) -->
+            <div class="form__group">
+              <label class="form__label" for="cf_budget">Орієнтовний бюджет</label>
+              <select id="cf_budget" name="budget" class="form__select">
+                <option value="" selected>Оберіть діапазон</option>
+                <option value="under25">До 25 000 грн</option>
+                <option value="25-50">25 000 — 50 000 грн</option>
+                <option value="50-100">50 000 — 100 000 грн</option>
+                <option value="over100">Понад 100 000 грн</option>
+                <option value="discuss">Обговоримо індивідуально</option>
+              </select>
+            </div>
+
+            <!-- Площа (ЛР №6: type="number") -->
+            <div class="form__group">
+              <label class="form__label" for="cf_area">Площа приміщення (м²)</label>
+              <input
+                type="number"
+                id="cf_area"
+                name="area"
+                class="form__input"
+                placeholder="Наприклад: 75"
+                min="0"
+                max="10000"
+              />
+            </div>
+
+            <!-- Повідомлення (ЛР №6: <textarea>) -->
+            <div class="form__group">
+              <label class="form__label" for="cf_message">
+                Опис проекту <span class="required">*</span>
+              </label>
+              <textarea
+                id="cf_message"
+                name="message"
+                class="form__textarea"
+                placeholder="Розкажіть про ваш проект: стиль, побажання, терміни..."
+                required
+                rows="5"
+              ></textarea>
+              <span class="form__error" id="cf_messageError">Напишіть опис проекту (мінімум 10 символів)</span>
+            </div>
+
+            <!-- Як дізналися (radio buttons — ЛР №6) -->
+            <div class="form__group">
+              <span class="form__label">Як ви про нас дізналися?</span>
+              <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 8px;">
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                  <input type="radio" name="source" value="google" style="accent-color: var(--color-accent);" />
+                  Google
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                  <input type="radio" name="source" value="instagram" style="accent-color: var(--color-accent);" />
+                  Instagram
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                  <input type="radio" name="source" value="friends" style="accent-color: var(--color-accent);" />
+                  Від знайомих
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer;">
+                  <input type="radio" name="source" value="other" style="accent-color: var(--color-accent);" />
+                  Інше
+                </label>
+              </div>
+            </div>
+
+            <!-- Checkbox (ЛР №6: type="checkbox") -->
+            <div class="form__checkbox-group">
+              <input
+                type="checkbox"
+                id="cf_privacy"
+                name="privacy"
+                class="form__checkbox"
+                required
+              />
+              <label class="form__checkbox-label" for="cf_privacy">
+                Я погоджуюся з <a href="#">Політикою конфіденційності</a>
+                та даю згоду на обробку персональних даних <span class="required">*</span>
+              </label>
+            </div>
+            <span class="form__error" id="cf_privacyError">Потрібно погодитись з Політикою конфіденційності</span>
+
+            <!-- Кнопка (ЛР №6: type="submit") -->
+            <button type="submit" class="form__submit">
+              📨 Надіслати заявку
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html" class="logo">
+              <span class="logo__name">Interior Studio</span>
+              <span class="logo__tagline">Дизайн інтер'єру</span>
+            </a>
+          </div>
+          <p class="footer__description">Ми створюємо красиві та функціональні простори.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">📷</a>
+            <a href="#" class="footer__social-link">📘</a>
+            <a href="#" class="footer__social-link">📌</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Навігація</h4>
+          <ul class="footer__nav-list">
+            <li><a href="index.html" class="footer__nav-link">Головна</a></li>
+            <li><a href="services.html" class="footer__nav-link">Послуги</a></li>
+            <li><a href="index.html#portfolio" class="footer__nav-link">Портфоліо</a></li>
+            <li><a href="contact.html" class="footer__nav-link">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Послуги</h4>
+          <ul class="footer__nav-list">
+            <li><a href="services.html#residential" class="footer__nav-link">Житлові інтер'єри</a></li>
+            <li><a href="services.html#commercial" class="footer__nav-link">Комерційні проекти</a></li>
+            <li><a href="services.html#supervision" class="footer__nav-link">Авторський нагляд</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Контакти</h4>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>вул. Хрещатик, 15, Київ</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <a href="tel:+380441234567" class="footer__nav-link">+38 (044) 123-45-67</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Interior Studio | <strong>Білоус Владислав</strong>, К-31</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальне вікно успіху -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal__icon">🎉</div>
+      <h2 class="modal__title">Заявку прийнято!</h2>
+      <p class="modal__text">
+        Дякуємо за звернення до Interior Studio! Наш менеджер зв'яжеться
+        з вами протягом 2 годин. Очікуйте на дзвінок або email.
+      </p>
+      <button class="modal__close" id="modalClose">Чудово!</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
